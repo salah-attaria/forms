@@ -1,0 +1,21 @@
+<form class="form-control" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text" class="form-inputs"  name="name" placeholder="Enter your name" formControlName="user">
+  <br>
+  <span *ngIf="user && user.invalid && user && user.touched" style="font-size: small;">Please enter your name in alphabet correctly!!</span>
+  <!-- <br> -->
+  <br>
+
+  <input type="password" name="password" required  placeholder="Enter your password"  formControlName="password">
+  <!-- <br> -->
+  <br>
+  <span *ngIf="password && password.invalid && password.touched" style="font-size: small;">Please enter your password correctly | atleast 5 characters!!</span>
+  <!-- <br/> -->
+  <br/>
+
+  <!-- <span *ngIf="name.invalid && password.invalid">Please enter the valid credentials!!</span> -->
+  <button class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+</form>
+<br>
+<br>
+<br>
+<!-- <button  (click)="submit(loginForm.value)">Outside form button</button> -->

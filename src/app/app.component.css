@@ -1,0 +1,22 @@
+form{
+    /* border: 1px solid black; */
+    width: 500px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+form >input{
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 440px;
+    height: 40px;
+    margin:10px 20px 5px 20px;
+}
+span{
+    margin-left: 20px;
+
+}
+button{
+    width: 100px;
+    margin: 0px 200px;
+}
